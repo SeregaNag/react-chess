@@ -27,6 +27,7 @@ const BoardComponent: FC<BoardProps> = ({board, setBoard}) => {
 
   function highlightCells() {
     board.highlightCells(selectedCell)
+    updateBoard()
   }
 
   function updateBoard() {
